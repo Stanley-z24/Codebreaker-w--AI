@@ -1,0 +1,25 @@
+# Codebreaker w/ AI
+
+Simple overview of use/purpose.
+
+## Description
+
+Program run a Codebreakers game with AI. It allows the user to guess the code that is randomized by AI or for the user to pick the code
+and the AI will try their best to guess it. The program runs exactly like the codebreaker game in which each player has 10 turns to guess 
+the secret code. Hints are given in Black and White to signify right position and colour or right colour wrong position. The program has a 
+few extra features from file handling (saving results on file), timer, sound, and difficulty (in terms of 4,6, or 8 colours).
+
+## Getting Started
+
+
+### Executing program
+
+```
+try { //Plays background music
+    File audioMusic = new File("YOUR MUSIC FILE HERE");
+    musicAudio = AudioSystem.getAudioInputStream(audioMusic); //Copy path to audioMusic
+    music = AudioSystem.getClip();
+    music.open(musicAudio);
+} catch (Exception ex){} 
+```
+* Music files needs to be changed depending on path to file in folder
